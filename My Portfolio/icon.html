@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="my pics.jpg" type="image/x-icon">
+    </head>
+    <style>
+        .ul-list{
+            margin: 50px;
+        }
+        .ul-list ul{
+           visibility: hidden;
+        }
+        .ul-list i:hover ~ #ul{
+            visibility: visible;
+        }
+    </style>
+    <body>
+        <div class="ul-list">
+            <i title="Menu" class='bx bx-menu' onclick="menu()"></i>
+            <ul id="ul">
+                <select>
+                    <option>Home</option>
+                    <option>Home</option>
+                    <option>Home</option>
+                </select>
+                <li>Menu</li>
+                <li>Menu</li>
+                <li>Menu</li>
+            </ul>
+        </div>
+    </body>
+    <script>
+        var menu1 =document.getElementById("ul");
+
+        function menu() {
+            menu1.style.visibility = "visible"
+        }else if(menu1 is visible){
+            menu1.style.visibility = "hidden"
+        }
+
+    </script>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>restaurant</title>
+        <link rel="shortcut icon" href="logo3.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="newrest.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <section class="header" id="home">
+            <nav>
+                <img src="logo3.jpg" class="logo">
+                <div class="div1" id="div1">
+                    <i title="Close" class='bx bx-x-circle' id="close" onclick="hidemenu()"></i>
+                    <ul type="none" id="ul">
+                        <li><a href="n.j.html">HOME</a></li>
+                        <li><a href="#menu-page1">MENU</a></li>
+                        <li><a href="#order">ORDER HERE</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                    <div class="dark-mode">
+                        <i class='bx bxs-moon' id="moon"></i>
+                        <button onclick="dark()">ON</button>
+                        <button onclick="light()">OFF</button>
+                    </div>
+                </div>
+                <i title="Menu" class='bx bx-menu' id="menu" onclick="showmenu()"></i>
+            </nav>
+
+            <div class="div2">
+                <h1><em>N.J'S</em> RESTUARANT</h1>
+                <p style="width: 80%;margin: auto;">You dont have to break banks 
+                before you eat healthy food and that's only possible with 
+                <b><span><em>N.J'S</em> RESTUARANT</span></b>.We sell quality and affordable  
+                <b>dishes(Native and English),bakeries,</b> and lot more....
+                that suit your budget. It's nationwide delivery and free delivery.
+                Order now to get started.</p>
+
+                <h2>RESERVATION</h2>
+                
+                <p class="let"><span>&#10003;</span> <em>Come get the best here...</em></p>
+                <p class="let"><span>&#10003;</span> <em>Taste good fun in our meal...</em></p>
+                <p class="let"><span>&#10003;</span> <em>Customer service perfect...</em></p>
+            
+                <button>Order Now</button>
+            </div>
+        </section>
+            <!------------------  Java Script For Menu icon ----------------------->
+
+        <script>
+            var div1 = document.getElementById("div1");
+            var bright = document.getElementById("moon");
+            var list = document.getElementById("ul");
+            var off = document.getElementById("close");
+            function showmenu(){
+                div1.style.right="0";
+            }
+            function hidemenu(){
+                div1.style.right="-400px";
+            }
+            function dark(){
+                off.style.color= "white"
+                bright.style.color= "black";
+                bright.style.backgroundColor= "white";
+                div1.style.backgroundColor= "black";
+                div1.style.color= "black";
+            }
+            function light(){
+                off.style.color= "black"
+                bright.style.color= "white";
+                bright.style.backgroundColor= "black";
+                div1.style.backgroundColor= "grey";
+                list.style.color= "black";
+            }
+            
+        </script>
+    
+
+    
+         <!----------------Customers Remarks---------------------->
+
+        <section class="header4">
+            <h1>Customer Remarks</h1>
+            <p class="Lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+            <div class="row">
+                <div class="images">
+                    <img src="men2.jpg">
+                    <div class="cover">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Laudantium asperiores non a mollitia fugiat aspernatur quo nemo, 
+                            minima similique. Vitae quaerat delectus dignissimos nesciunt quidem 
+                            molestias odio nihil? Sint, harum.
+                        </p>
+                        <h3>Chris Benson</h3>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="female.jpg">
+                    <div class="cover">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Laudantium aspe riores non a mollitia fugiat asper natur quo nemo, 
+                            minima simi lique. Vitae quaerat delectus dignissimos nesciunt quidem 
+                            molestias odio nihil? Sint, harum.
+                        </p>
+                        <h3>Mary Jane</h3>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="female2.jpg">
+                    <div class="cover">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Laudantium asperiores non a mollitia fugiat aspernatur quo nemo, 
+                            minima similique. Vitae quaerat delectus dignissimos nesciunt quidem 
+                            molestias odio nihil? Sint, harum.
+                        </p>
+                        <h3>Sonia Edmon</h3>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="men1.jpg">
+                    <div class="cover">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Laudantium asperiores non a mollitia fugiat aspernatur quo nemo, 
+                            minima similique. Vitae quaerat delectus dignissimos nesciunt quidem 
+                            molestias odio nihil? Sint, harum.
+                        </p>
+                        <h3>Alex David</h3>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------End of Customers Remarks---------------->
+
+
+
+        <!-----------------------Menu--------------------->
+
+        <section class="header3" id="menu-page1">
+            <h1>Our Menu</h1>
+            <p style="color: gray;">Lorem ipsum dolor sit amet consectetur elit.</p>
+            <div class="material-content">
+                <div class="material">
+                    <p>WELCOME WITH</p>
+                    <h2>Popular <span>Foods</span></h2>
+                    <p>FOR</p>
+                
+                    <a href="#tea"><i class='bx bxs-bowl-hot'> Breakfast</i></a>
+                    <a href="#dish2"><i class='bx bxs-bowl-rice'> Lunch</i></a>
+                    <a href="#shawarma"><i class='bx bx-cheese'> Dinner</i></a>
+                    <a href="#cocktail"><i class='bx bxs-drink'> Drinks</i></a>
+                
+                    <div class="scroll">
+                        <img src="tea.jpg" id="tea">
+                        <img src="dish2.jpg" id="dish2">
+                        <img src="shawarma.jpg" id="shawarma">
+                        <img src="cocktail.jpg" id="cocktail"> 
+                    </div>
+                </div>
+
+                <div class="material-content2">
+                    <div class="image1"> 
+                        <img src="hamburger.jpg">
+                        <p style="font-weight: 900;">Hamburger</p>
+                        <p><span>$5.00</span></p>
+                    </div>
+                    <div class="image1">
+                        <img src="frenchfries2.jpg">
+                        <p style="font-weight: 900;">Frenchfries</p>
+                        <p><span>$10.00</span></p>
+                    </div>
+                    <div class="image1">
+                        <img src="dish1.jpg">
+                        <p style="font-weight: 900;">Meat Egusi Soup</p>
+                        <p><span>$4.00</span></p>
+                    </div> 
+                    <div class="image1">
+                        <img src="pizza1.jpg">
+                        <p style="font-weight: 900;">Pizza</p> 
+                        <p><span>$15.00</span></p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+        <!----------------End of Menu--------------->
+
+
+        <!------------------------------About------------------------------------>
+
+        <section class="header2" id="about">
+            <a href="#home">HOME<i class='bx bx-right-arrow-alt'></i></a>
+            <h1>About Us</h1>
+            <p>Qui sommes-nous preum elle's mapa'kute</p>
+            <div class="main-about">
+                <video autoplay loop muted>
+                    <source src="foodvideo.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="about">  
+                    <div class="home-1">
+                        <h2 class="home-space"><span>&#10003;</span> Home Delivery / Service</h2>
+                        <p>
+                            Not need to worry, <b><em>N.J'S</em> RESTUARANT</b> offers the easiest way
+                            to eat great food without the hassle &#128523;. We deliver 'Fast, fresh foods at its finest'.
+                            Leave the cooking to us and you do the eating while delivering deliciousness 
+                            from our kitchen to your doorstep. Mind you we offer free delivery to our customers
+                            &#128521;. <br><span>THANK YOU!!</span>
+                        </p>
+                    </div>
+                    <div class="home-1">
+                        <h2 class="home-space"><span>&#10003;</span> Mission / Vision</h2>
+                        <p>
+                            Our mission / vision is to see that every of our customers is satisfied, as the saying goes
+                            'customers are always right' &#128538;. <b><em>N.J'S</em> RESTUARANT</b> will strive to  be an 
+                            innovative, professional, dynamic and competititive business enterprise both now and in future.
+                            We shall embrace customer satisfaction as our way of life and remain conscious of our social 
+                            responsibility and our role in community development and nation <br>
+                            <em><span>motto : making customers satisfaction our piority.</span></em>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="section-box">
+                <div class="section1">
+                    <i class='bx bxs-bus'> DELIVERY</i>
+                    <P>free delivery</P>
+                    <p>limited cost</p>
+                    <p>shipping the best</p>
+                    <p>best in delivery</p>
+                </div>
+                <div class="section1">
+                    <i class='bx bxs-location-plus'> LOCATION</i>
+                    <p>branches all over the world</p>
+                    <p>tel- 09118166827</p>
+                    <p>gym for unisex</p>
+                    <p>choose location</p>
+                </div> 
+                <div class="section1"> 
+                    <i class='bx bxs-user'> SERVICE</i>
+                    <p>offer the best service</p>
+                    <p>table for two and more</p>
+                    <p>treat customers with care</p>
+                    <p>great relaxment for all</p>
+                </div>
+            </div>
+        </section> 
+
+        
+        <!-------------End of About--------------------->
+
+        <!---------------Order Here----------------------->
+
+        <section class="header6" id="order">
+            <a href="#home">HOME<i class='bx bx-right-arrow-alt'></i></a>
+            <h2>Order Here</h1>
+            <p style="color: gray;">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit</p>
+            <div class="carry-all">
+                <div class="buy1">
+                    <div class="buy1-child">
+                        <p>BUY ONLINE</p>
+                        <h1>NATIVE DISHES</h1>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+
+                <div class="buy2">
+                    <div class="buy1-child">
+                        <p>BUY ONLINE</p>
+                        <h1>BAKERIES</h1>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="buy3">
+                   <div class="buy1-child">
+                        <p>BUY ONLINE</p>
+                        <h1>PASTRIES</h1>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="buy4">
+                    <div class="buy1-child">
+                        <p>BUY ONLINE</p>
+                        <h1>FAST-CHOP</h1>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="buy5">
+                    <div class="buy1-child">
+                        <p>BUY ONLINE</p>
+                        <h1>NICE RICE</h1>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="buy6">
+                    <div class="buy1-child">
+                        <p>BUY ONLINE</p>
+                        <h1>COFFE / TEA</h1>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="buy7">
+                    <div class="buy1-child">
+                        <p>BUY ONLINE</p>
+                        <h1>SOFT DRINKS</h1>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="buy8">
+                    <div class="buy1-child">
+                        <p>BUY ONLINE</p>
+                        <h1>CHAMPAGNE</h1>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="buy9">
+                    <div class="buy1-child">
+                        <p>BUY ONLINE</p>
+                        <h1>ICE-CREAM</h1>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <!------------------- Contact ---------------------------->
+
+        <section class="header5" id="contact">
+            <a href="#home" style="position: absolute; top: 5%; 
+            left: 5%; color: white; text-decoration: none; font-size: 20px;">Home</a>
+            <div class="contact-container-child">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   consequatur magni eveniet voluptas
+                </p>
+            </div>
+            <div class="header5-child">
+                <div class="contact-container">
+                    <div class="all">
+                        <div class="icon-child"><i class='bx bxs-location-plus'></i></div>
+                        <div class="all-child">
+                            <h3>Address</h3>
+                            <p>8, Lekki Phase One, <br>off Ikoyi Ibeju Lekki.</p>
+                        </div>
+                    </div>
+                    <div class="all">
+                        <div class="icon-child"><i class='bx bxs-phone-call'></i></div>
+                        <div class="all-child">
+                            <h3>Phone</h3>
+                            <p>+234-9118-166-827</p>
+                            <p>+234-9130-673-927</p>
+                        </div>
+                    </div>
+                    <div class="all">
+                        <div class="icon-child"><i class='bx bx-envelope'></i></div>
+                        <div class="all-child">
+                            <h3>Email</h3>
+                            <p>uchenancy995@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="all">
+                        <a href="https://wa.me/+2349118166827/?text=Please help here !!
+                            
+                        Note : : do no change this text so we can easily assess you . Thanks for your understanding."><div class="icon-child" style="background-color: green; padding: 1px;">
+                        <i class='bx bxl-whatsapp' style="color: white;"></i></div></a>   
+                        <div class="all-child">
+                            <h3>Locate our whatsapp agent for more info <br>
+                            by clicking on the whatsapp icon</h3>
+                        </div>
+                    </div>
+                    <!-----
+                    <div class="whatsapp">
+                        <a href="https://wa.me/+2349125299640">click </a>
+                    </div>
+                    <div class="whatsapp">
+                        <a style="margin-top: 5%;" href="https://wa.me/+2349118166827/?text=I Want To Order">more info </a>
+                    </div>-->
+                </div>
+
+                <div class="send-message">
+                    <h2>Send Messages</h2>
+                    <div class="send2">
+                        <form>
+                            <input type="text" placeholder="Full Name"><br>
+                            <input type="text" placeholder="Email"><br>
+                            <textarea placeholder="Type your Message" id="" cols="30" rows="7"></textarea> 
+                            
+                            <button>Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,778 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #080808;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url(myself.png);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    /*box-shadow: 0px 0px 5px 10px white;*/
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+.class{
+    opacity: 0.9;
+    border: 15px solid orangered;
+    /*border: 70px solid rgb(246, 178, 50);
+    border-right-color: orangered;
+    border-bottom-color: orangered;*/
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 50px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: goldenrod;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav i{
+    font-size: 30px;
+    visibility: hidden;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: red;
+}
+
+
+/*-------- CSS FOR ABOUT SECTION--------*/
+/*-------- CSS FOR ABOUT SECTION--------*/
+
+.header2{
+    padding: 80px 0;
+    color:#ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row1{
+    flex-basis: 35%;
+}
+
+.row1 img{
+    width: 100%;
+    box-shadow:0px 3px 10px #ababab;
+    border-radius: 15px;
+}
+
+.row2{
+    flex-basis: 60%;
+}
+
+.row2 span{
+    color: goldenrod;
+}
+
+.h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.row2 p{
+    margin-bottom: 30px;
+}
+
+.flex{
+    display: flex;
+    margin-top: 30px;
+}
+
+.origin{
+    width: 100%;
+    height: 100%;  
+    box-shadow: 5px 0px 8px#ababab;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.origin ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.origin ul li span{
+    color: yellow;
+}
+
+.flex-child{
+    color: red;
+    font-size: 20px;
+    transition: 1s;
+    cursor: pointer;
+    height: 50px;
+    padding: 30px 20px;
+}
+
+.flex-child:hover ~ #ul{
+    display: block;
+}
+
+#ul{
+    padding: 0 20px;
+    display: none;
+}
+
+/*--------------- My Services-----------*/
+/*--------------- My Services-----------*/
+
+.header3{
+    padding: 30px 0;
+    color:#ababab;
+}
+
+.service-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 5%;
+}
+
+.service-grid-child{
+    width: 100%;
+    background: #262626;
+    padding: 40px;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.service-grid-child i{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 5px solid orangered;
+    border-radius: 50%;
+}
+
+.service-grid-child:hover{
+    cursor: pointer;
+    background: rgb(103, 4, 4);
+    /*background: rgb(248, 40, 40);*/
+    transform: translateY(-10px);
+    box-shadow: 2px 0px 10px 5px white;
+}
+
+.service-grid-child h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.service-grid-child a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    background: orangered;
+    box-shadow: 2px 0px 5px white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.service-grid-child a:hover{
+    background: orange;
+}
+
+
+/*-------------- Projects ------------*/
+/*-------------- Projects ------------*/
+
+.header5{
+    color: white;
+    padding: 50px 0;
+}
+
+.website{
+    width: 100%;
+    height: 50%;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient( rgba(0,0,0,0.85),rgba(0,0,0,0.75),
+    rgba(0,0,0,0.68),rgba(0,0,0,0.55)) ,url(school\,png.jpg);    
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.website h1{
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 
+    'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, 
+    Verdana, sans-serif;
+    margin-bottom: 2%;
+}
+.website a{
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 5px solid rgb(202, 6, 6);
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin-right: 55%;
+    transition: 0.3s;
+}
+
+.website a:hover{
+    background: red;
+}
+
+.website p{
+    font-size: 30px;
+    text-align: left;
+}
+
+
+/*------------- My Contact -----------*/
+/*------------- My Contact -----------*/
+
+.header4{    
+    color: white;
+    padding-top: 100px;
+}
+
+.contact-text{
+    flex-basis: 35%;
+}
+
+.contact-text p{
+    margin-top: 20px;
+    color: white;
+}
+
+.contact-text p i{
+    color: white;
+    height: 50px;
+    width: 50px;
+    padding: 10px ;
+    font-size: 30px;
+    background-color: green;
+    border-radius: 10%;
+}
+
+.icons{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.icons a{
+    color: rgb(123, 119, 119);
+    transition: 0.5s;
+}
+
+.icons a i{
+    transition: 0.5s;
+}
+
+.icons a i:hover{
+    color: orangered;
+    transform: translateY(-5px);
+}
+
+.contact-input{
+    flex-basis: 60%;    
+}
+
+#msg{
+    margin-top: 10px;
+    color: #61b752;
+    font-size: 14px;
+    display: block;
+}
+
+input,
+form textarea{
+    width: 100%;
+    font-size: 18px;
+    padding: 20px;
+    padding-inline: 30px;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    background-color: #262626;
+    color: white;
+    outline: none;  
+    transition: 0.25s;
+}
+
+form input:hover,
+form textarea:hover{
+    background: #2c2b2b;
+}
+
+.btn{
+    font-size: 20px;
+    padding: 15px 50px;
+    border-radius: 10px;
+    background: orangered;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgb(253, 82, 20);
+}
+
+.btn.btn2{
+    padding: 15px;
+    margin-top: 20px;
+    background: transparent;
+    border: 3px solid red;
+    color: white;
+}
+
+.btn.btn2:hover{
+    background: red;
+    border: 3px solid rgb(93, 92, 92);
+}
+
+.copy-right{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copy-right i{
+    color: red;
+}
+
+
+/*-------- @Media for LARGE Screen ---------*/
+
+@media only screen and (max-width: 2570px){
+    .website a{
+        margin-right: 0%;
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    .header{
+        background-position: bottom;
+    }
+    .header-text{
+        margin-top: 50%;
+        font-size: 2rem;
+    }
+    .header-text h1{
+        font-size: 70px;
+        width: 100%;
+    }
+    .header-text marquee{
+        width: 25%;
+    }
+    .class{
+        opacity: 0.9;
+        border: 10px solid orangered;
+    }
+    .logo{
+        width: 100px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav i{
+        visibility: none;
+    }
+    .website a{
+        margin-right: 65%;
+    }
+
+}
+
+@media only screen and (max-width: 1300px){
+    .header{
+        height: 100vh;
+        background: url(myself.png);
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .header-text{
+        margin-top: 50%;
+        font-size: 2rem;
+    }
+    .header-text h1{
+        font-size: 60px;
+        width: 500px;
+    }
+    .header-text marquee{
+        width: 25%;
+    }
+    .class{
+        opacity: 0.9;
+        border: 7px solid orangered;
+    }
+    nav i{
+        visibility: visible;
+        font-size: 25px;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 400px;
+        height: 100vh;
+        background: orangered;
+        padding-top: 50px;
+        transition: 0.5s;
+        opacity: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px;
+    }
+    nav ul li a{
+        font-size: 30px;
+    }
+    nav ul i{
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        cursor: pointer;
+    }
+    /*----- Css for About ------*/
+    .h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .row2 h1 span{
+        font-size: 14px;
+        
+    }
+    .row2 h1{
+        line-height: 20px;
+    }
+    .row1{
+        margin-bottom: 30px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .origin{
+        padding: 10px;
+    }
+    .origin p{
+        font-size: 15px;
+        height: 30px;
+        padding: 15px;
+    }
+    .contact-text,
+    .contact-input{
+        flex-basis: 100%;
+    }
+    .contact-text p i{
+        height: 35px;
+        width: 35px;
+        padding: 5px;
+        font-size: 25px;
+        border-radius: 10%;
+    }
+    .copy-right{
+        font-size: 10px;
+        padding: 10px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .btn.btn2{
+        margin-bottom: 20px;
+    }
+    form input,
+    form textarea{
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        padding-inline: 10px;
+        margin-bottom: 4%;
+        border-radius: 7px;
+    }
+
+    /*----- css for my service ------*/
+    
+    .header3{
+        margin: 10px 0;
+    }
+    .service-grid{
+        margin-top: 10%;
+    }
+    .service-grid-child{
+        padding: 20px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    
+    .service-grid-child i{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 3px solid orangered;
+    }
+    .service-grid-child h2{
+        font-size: 20px;
+    }
+    
+    .service-grid-child a{
+        font-size: 14px;
+        margin-top: 15px;
+        box-shadow: 2px 0px 5px white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    /*----- Css for Portfolio ----*/
+    .website{
+        padding: 50px 20px;
+    }
+    .website h1{
+        font-size: 3rem;
+    }
+    .website a{
+        margin-right: 67%;
+        padding: 10px 30px;
+        border: 2px solid rgb(202, 6, 6);
+    }
+    .website p{
+        font-size: 25px;
+    }
+
+    /*------ Css for contact -------*/
+    .header4{    
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    .header-text{
+        margin-top: 50%;
+        font-size: 1.5rem;
+    }
+    .header-text h1{
+        font-size: 50px;
+        width: 100%;
+    }
+    .header-text marquee{
+        width: 25%;
+    }
+    .class{
+        opacity: 0.9;
+        border: 7px solid orangered;
+    }
+    .logo{
+        width: 100px;
+    }
+    nav i{
+        visibility: visible;
+        font-size: 25px;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 350px;
+        height: 100vh;
+        background: orangered;
+        padding-top: 50px;
+        transition: 0.5s;
+        opacity: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+    .origin{
+        padding: 5px;
+    }.website h1{
+        font-size: 2rem;
+    }
+    .website a{
+        margin-right: 57%;
+        padding: 9px 20px;
+        border: 2px solid rgb(202, 6, 6);
+    }
+    .website p{
+        font-size: 20px;
+    }
+
+}
+
+
+/*-------- @Media for small Screen ---------*/
+
+@media only screen and (max-width: 430px){
+    .header-text{
+        margin-top: 70%;
+        font-size: 1rem;
+    }
+    .header-text h1{
+        font-size: 30px;
+        width: 100%;
+    }
+    .class{
+        opacity: 0.9;
+        border: 5px solid orangered;
+    }
+    .logo{
+        width: 70px;
+    }
+    nav i{
+        visibility: visible;
+        font-size: 20px;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 200px;
+        height: 100vh;
+        background: orangered;
+        padding-top: 50px;
+        transition: 0.5s;
+        opacity: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+    .row1,.row2{
+        flex-basis: 100%;
+    }
+    .origin{
+        padding: 2px;
+    }
+
+    /*---- Css for My portfolio ------*/
+    .website{
+        padding: 50px 10px;
+    }
+    .website h1{
+        font-size: 22px;
+    }
+    .website a{
+        margin-right: 70%;
+        padding: 9px 15px;
+        border: 2px solid rgb(202, 6, 6);
+    }
+    .website p{
+        font-size: 13px;
+    }
+    
+}
+
+@media(max-width:380px){
+    /*---- Css for My portfolio ------*/
+    .website{
+        padding: 50px 10px;
+    }
+    .website h1{
+        font-size: 19px;
+    }
+    .website a{
+        padding: 5px 10px;
+        border: 2px solid rgb(202, 6, 6);
+    }
+    .website p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .contact-text p{
+        font-size: 13px;
+    }
+    /*---- Css for My portfolio ------*/
+    .website{
+        padding: 50px 7px;
+    }
+    .website h1{
+        font-size: 17px;
+    }
+}
+

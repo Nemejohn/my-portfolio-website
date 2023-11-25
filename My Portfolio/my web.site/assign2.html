@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assign</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <style>
+        *{
+            text-decoration: none;
+        }
+        body{
+            background-image: url(bac.jpg.jpg);
+            background-size: cover;
+            background-clip: border-box;
+        }
+       .div1{
+           float: right;
+           width: 1050px;
+        }
+        .div1 ul li{
+            float: left;
+            width: 150px;
+            margin-top: 15px;
+        }
+        .div1 ul li a{
+            color: white;
+        }
+        .div1 ul li :hover{
+            background-color: green;
+            padding: 10px;
+            padding-inline: 10px;
+            transition:ease 1s;
+        }
+        .div1 ul li a:hover{
+            color: red;
+        }
+        .div1 form input{
+            border: 1px solid orangered;
+        }
+        form input{
+            padding: 9px;
+
+        }
+        .div2{
+            margin: 7%;
+        }
+        button{
+            padding: 10px;
+            padding-inline: 60px;
+            background-color: orangered;
+            border-radius: 10px;
+        }
+        h1{
+            color: orangered;
+            font-size: 4rem;
+            line-height: 50px;
+        }
+        
+        p{
+            color: white;
+            letter-spacing: 2px;
+        }
+        h3{
+            color: orangered;
+            font-size: 2rem;
+            margin-left: 5%;
+        }
+
+        form input[type=text]{
+            color: white;
+            background-color: rgb(8, 8, 8);
+        }
+        form input[type=button]{
+            background-color: orangered;
+            color: white;
+        }
+        .login{
+            background-color: black;
+            opacity: 0.9;
+            width: 400px;
+            height: 500px;
+            padding: 11px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 5rem;
+            padding-bottom: 3rem;
+        }
+        .login form input{
+            background-color: black;
+            width: 70%;
+            padding: 20px;
+            border-top: none;
+            border-inline: none;
+            color: white;
+            border-color: orangered;
+            font-size: larger;
+            outline: none;
+        }
+        .login button{
+            width: 80%;
+            padding: 15px;
+            font-size: large;
+        }
+        .login h2{
+            background-color: white;
+            width: 80%;
+            padding: 10px;
+            height: 30px;
+            font-size: larger;
+            color: orangered; 
+            margin-left: 25px;
+            border-radius: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+            'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .boat{
+            display: grid;
+            grid-template-columns:repeat(2,1050px)
+        }
+        .login p a{
+            color: orangered;
+        }
+        .icon i{
+            padding: 15px;
+        }
+        span{
+            color: white;
+        }
+        .login p{
+            font-size: larger;
+        }
+
+        .space{
+           margin-top:10px;
+        }
+
+        .div1 button{
+            padding: 10px;
+            padding-inline: 30px;
+            background-color: orangered;
+            border-radius: 5px;
+        }
+
+        .div1 form{
+            display: flex;
+            margin-right: auto;
+        }
+
+        @media(max-width: 702.50px){
+            h3{
+                color: white;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width: 1250px){
+            #menu{
+                display: block;
+                text-align: right;
+            }
+        }
+
+        @media(max-width: 1250px){
+            .div1 ul{
+                display:none;
+            }
+        }
+
+        #menu{
+            display:none;
+        }
+
+    </style>
+    <body>
+        <div>
+            <div class="div1"  id="allow">
+                <ul type="none">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="">DESIGN</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                <i class='bx bx-menu' id="menu" style="color: white; font-size: 27px; width: 15%; height: 30px;"></i>
+                <form>
+                    <input type="text" placeholder="Type to Search">
+                    <button>Search</button>
+                </form>
+            </div>
+            <h3 onclick="buttonHandle()">PraRoz</h3>
+            <div class="boat">
+                <div class="div2">
+                    <h1 id=""><span>Web Design &</span></h1>
+                    <h1>Development</h1>
+                    <h1><span>Course</span></h1>
+                    <p>Web Design is a specialisation of the design stream. They also use HTML,</p>
+                    <p>CSS,WYSIWYG editing software, mark up validators e.t.c</p>
+                    <p>to create design elements.</p><br>
+                    <button>JOIN US</button>
+                </div>
+                <div class="login">
+                    <h2 class="button" >Login Here</h2>
+                    <form>
+                        <input type="text" placeholder="Enter Email Here"><br><br><br>
+                        <input type="password" placeholder="Enter Password Here"><br><br><br>
+                        <button>Login</button>
+                        <p>Don't have an account?</p>
+                        <p><a href="">Sign up</a> here</p>
+                    </form>
+                    <p class="space">login with</p>
+                    <div class="icon">
+                        <a href="http://facebook.com"><i class='bx bxl-facebook-circle' style="color: white; font-size: 30px;"></i></a>
+                        <a href="http://instgram.com"><i class='bx bxl-instagram' style="color: white; font-size: 30px;"></i></a>
+                        <a href="http://twitter.com"><i class='bx bxl-twitter' style="color: white; font-size: 30px;"></i></a>
+                        <a href="http://google.com"><i class='bx bxl-google' style="color: white; font-size: 30px;"></i></a>
+                        <a href="http://youtube.com"><i class='bx bxl-youtube' style="color: white; font-size: 35px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="new.js">
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button</title>
+    </head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: black;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .div1{
+            margin-top: 15%;
+        }
+        .wire{
+            border: 1px solid none;
+            position: absolute;
+            top: 0;
+            border-top: none;
+            height: 12.2rem;
+            width: 7px;
+            background: #262626;
+        }
+        .head_light{
+            width: 18rem;
+            height: 18rem;
+            border: 2px solid none;
+            border-radius: 50%;
+            border-top: none;
+            background: linear-gradient(rgba(0, 0, 0, 0.9), white);
+            /*background: rgb(239, 232, 232);
+           box-shadow: 0px 120px 1000px 300px white;*/
+        }
+        .box{
+            position: absolute;
+            top: 24%;
+            left: 29.8%;
+            height: 15rem;
+            width: 13rem;
+            margin-left: 14%;
+            border: 2px solid none;
+            border-bottom: 1px solid grey;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            background: #262626;
+        }
+        .light{
+            background: linear-gradient(rgba(0,0,0,0.2), rgb(148, 148, 3));
+            height: 50%;
+            width: 10%;
+            margin-left: 45%;
+            border-top: none;
+            border: 1px solid grey;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .socket{
+            left: 4%;
+            top: 3%;
+            width: 15rem;
+            height: 15rem;
+            position: absolute;
+            padding: 50px 5px;
+            border: 2px solid white;
+            background: rgb(219, 214, 214);
+            border-radius: 7px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button{
+            height: 5rem;
+            width: 3rem;
+            background: white;
+            border-end-start-radius: 10px;
+            border-end-end-radius: 10px;
+            border: 1px solid white;
+        }
+        .button button{
+            width: 100%;
+            height: 50%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .button button:hover{
+            background: yellow;
+        }
+        .down{
+            border-end-start-radius: 10px;
+            border-end-end-radius: 10px;
+        }
+
+
+    </style>
+    <body>
+        <div class="socket">
+            <div class="button">
+                <button onclick="onbutton()">on</button>
+                <button class="down" onclick="offbutton()">off</button>
+            </div>
+        </div>
+        <div class="wire"></div>  
+        <div class="div1">       
+            <div class="box"></div>
+            <div class="head_light" id="head_light">
+                <div class="light"></div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var light = document.getElementById("head_light");
+
+        function onbutton(){
+           light.style.background = "rgb(239, 232, 232)"
+           light.style.boxShadow = "0px 10px 300px 300px white";
+        }
+        function offbutton(){
+           light.style.background = "linear-gradient(rgba(0, 0, 0, 0.9), white)";
+           light.style.boxShadow = "0px 10px 200px 300px black";
+        }
+    </script>
+</html>

@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.like-button{
+    height: 50px;
+    width: 90px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.like-color{
+    height: 0px;
+    width: 60px;
+    border-radius: 50%;
+    background: rgb(245, 209, 215);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.like-color:hover{
+    height: 60px;
+}
+
+.like-icon{
+    font-size: 40px;
+    margin: 10px 10px;
+}
+
+
+#icon2{
+    color: red;
+    position: absolute;
+    left: 47.91%; 
+    visibility: hidden;
+}
+
+.like-number p{
+    font-size: 40px;
+    margin-top: 5px;
+    margin-left: 7px;
+} 
+
+#numbers{
+    position: absolute;
+    left: 49.3%;
+    top: 48%;
+    visibility: hidden;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Setting</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <style>
+        body{
+            height: 100vh;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .menu-bar i{
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        p{
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu-content{
+           display: none;
+           margin-top: 5%;
+        }
+        .menu-content p{
+            border: 1px solid white;
+            padding: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .menu-content i{
+            position: relative;
+        }
+        .setting{
+            width: 100%;
+            margin-left: 80%;
+            margin-top: -20px;
+            border: 1px solid white;
+            visibility: hidden;
+        }
+        .setting i{
+            margin-left: 20px;
+        }
+        .setting p{
+            border: none;
+        }
+    </style>
+    <body id="body1">
+        <div class="menu-bar">
+            <i id="icon" class='bx bx-menu' onclick="openmenu()"></i>
+            <div class="menu-content" id="menu-content">
+                <p id="p" onclick="setting()">Settings <i id="icon" class='bx bxs-cog'></i></p>
+                <div class="setting" id="setting">
+                    <p>Dark mode <i id="dark" class='bx bxs-moon' onclick="dark()"></i> <i id="light" class='bx bxs-sun' onclick="light()"></i> <i onclick="cancel()" class='bx bx-x'></i></p>
+                    <p>Dark mode <i id="dark" class='bx bxs-moon' onclick="dark()"></i> <i id="light" class='bx bxs-sun' onclick="light()"></i></p>
+                    <p>Dark mode <i id="dark" class='bx bxs-moon' onclick="dark()"></i> <i id="light" class='bx bxs-sun' onclick="light()"></i></p>
+                    <p>Dark mode <i id="dark" class='bx bxs-moon' onclick="dark()"></i> <i id="light" class='bx bxs-sun' onclick="light()"></i></p>
+                    <p>Dark mode <i id="dark" class='bx bxs-moon' onclick="dark()"></i> <i id="light" class='bx bxs-sun' onclick="light()"></i></p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const menu_content = document.getElementById("menu-content");
+        const settings = document.getElementById("setting");
+        const body1 = document.getElementById("body1");
+        const icon1 = document.getElementById("icon");
+        const light1 = document.getElementById("light");
+        const dark1 = document.getElementById("dark");
+        const p = document.getElementById("p");
+        
+        //document.getElementById("setting").addEventListener(function (){})
+
+        function openmenu(){
+            menu_content.style.display = "block"
+        }
+        function cancel(){
+            settings.style.display = "none"
+        }
+        function setting(){
+            settings.style.visibility = "visible"
+        }
+        function light(){
+            body1.style.background = "white"
+            body1.style.color = "black"
+            icon1.style.color = "black"
+            light1.style.color = "black"
+            dark1.style.color = "black"
+            p.style.border = "1px solid black"
+            settings.style.border = "1px solid black"
+        }
+        function dark(){
+            body1.style.background = "black"
+            body1.style.color = "white"
+            icon1.style.color = "white"
+            light1.style.color = "white"
+            dark1.style.color = "white"
+            p.style.border = "1px solid white"
+            settings.style.border = "1px solid white"
+        }
+    </script>
+</html>

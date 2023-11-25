@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="my pics.jpg" type="image/x-icon">
+    </head>
+    <style>
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .input-head{
+            width: 200px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 20px;
+            position: relative;
+        }
+        .input-head input,
+        .input-head textarea{
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding-inline: 30px;
+            font-size: large;
+            outline: none;
+            
+        }
+        .input-head label{
+            position: absolute;
+            margin-top: -33px;
+            margin-left: 28px;
+        }
+        .input-head input:focus ~ label,
+        .input-head textarea:focus ~ label,
+        .input-head input:valid ~ label{
+            margin-top: -53px;
+            color: orangered;
+            background: white;
+            padding: 5px;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+        .input-head input:focus,
+        .input-head textarea:focus,
+        .input-head input:valid {
+            border: 1px solid orangered;
+        }
+
+   </style>
+    <body>
+        <div class="header">
+            <div class="input-head">
+                <input type="text" required>
+                <label for="">Username</label>
+                <input style="margin-top: 10%;" type="text" required>
+                <label for="">Email</label>
+                <input style="margin-top: 10%;" type="password" required>
+                <label for="">Password</label>
+                <input style="margin-top: 10%;" type="text" required>
+                <label for="">Textarea</label>
+                <input style="margin-top: 10%;" type="text" required>
+                <label for="">Address</label>
+                <textarea rows="20" cols="30" required></textarea>
+                <label for="">Address</label>
+            </div>
+            
+        </div>
+    </body>
+</html>

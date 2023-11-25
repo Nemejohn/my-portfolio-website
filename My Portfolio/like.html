@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="my pics.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="like.css">
+    </head>
+    <body>
+        <div class="like-button">
+            <div class="like-color" id="like-color" onclick="show()">
+                <div class="like-icon">
+                    <i id="icon1" class='bx bx-heart'></i>
+                    <i id="icon2" class='bx bxs-heart'></i>
+                </div>
+                <div class="like-number"><p id="number">0</p>
+                <p id="numbers">1</p></div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var like_color = document.getElementById("like-color");
+        var icon2 = document.getElementById("icon2");
+        var icon1 = document.getElementById("icon1");
+        var number = document.getElementById("number");
+        var numbers = document.getElementById("numbers");
+
+        function show() {
+            icon2.style.visibility = "visible";
+            icon2.style.animation = "animate .8s steps(28) 1"
+            number.style.visibility = "hidden";
+            number2.style.visibility = "visible;"
+        }
+    </script>
+</html>

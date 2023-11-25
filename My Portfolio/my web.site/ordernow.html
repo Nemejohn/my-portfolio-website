@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Now</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <style>
+        /*
+        This is a comment
+        */
+    
+        body{
+            background-color:skyblue;
+            background: url(back3\,jpg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .dishes{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin-left: 10%;
+        }
+        button{
+            margin-left: 20px;
+            padding: 10px;
+            padding-inline: 35px;
+            border-radius: 70px;
+        }
+        .add{
+            background-color: yellow;
+        }
+
+        .add:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .add:active{
+            opacity: 0.7;
+        }
+
+        .buy{
+            background-color: orange;
+        }
+
+        .buy:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .buy:active{
+            opacity: 0.7;
+        }
+
+        p{
+            margin-left: 20px;
+            font-size: large;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            color: black;
+            text-decoration: underline;
+        }
+        span{
+            font-size: larger;
+            margin-left: 30px;
+            color: white;
+        }
+        .website{
+            background-color: black;
+            width: 1200px;
+            margin-left: 10%;
+            opacity: 0.8;
+            padding-block: 50px;
+        }
+
+        .bake{
+            margin-top: 90px;
+        }
+
+        input{
+            padding: 10px;
+            margin-left: 150px;
+            width: 50%;
+        }
+
+        button{
+            background-color: orange;
+            margin-right: 20px;
+        }
+
+        @media(max-width:964px){
+            .dishes{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+    </style>
+    <body>
+        <a href="restuarant.html"><i class='bx bxs-home' title="Home" style="color:white; 
+        font-size: 27px; position:fixed;"></i></a>
+        <div class="website">
+            <!--
+                This is a comment
+            -->
+            <input type="text" placeholder="Search"></i>"><i class='bx bx-search' style="color: white; 
+            font-size: 27px;"></i>
+            <button>Search</button>
+            <h1><em>&#129386; Native Dishes &#129386;</em></h1>
+            <div class="dishes">
+                <div>
+                    <img style="margin-top: 20px;" width="300px" src="dish1.jpg" alt="">
+                    <P>BEEF EGUSI SOUP AND SEMO</P>
+                    <P>Price: $17.50</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...');">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;" width="300px" src="dish2.jpg" alt="">
+                    <P>QUALITY AMALA WITH EFORIRO</P>
+                    <P>Price: $20.50</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;" width="300px" src="dishes3.jpg" alt="">
+                    <P>ABACHA(<em>English Salad </em>) WITH EGGS</P>
+                    <P>Price: $10.00</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;" width="300px" src="dish4.jpg" alt="">
+                    <P>ASSORTED MEAT WITH JOLLOF RICE</P>
+                    <P>Price: $25.50</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;" width="300px" src="dish5.jpg" alt="">
+                    <P>AFRICAN FRIED-RICE</P>
+                    <P>Price: $15.25</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;"  width="200px" src="dish6.jpg" alt="">
+                    <P>QUALITY OFADA RICE AND STEW</P>
+                    <P>Price: $25.10</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;"  width="300px" src="dish7.jpg" alt="">
+                    <P>ASSORTED BANGA STEW WITH RICE</P>
+                    <P>Price: $12.19</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;"  width="300px" src="pepper soup.jpg" alt="">
+                    <P>ASSORTED PEPPER SOUP</P>
+                    <P>Price: $20.55</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div><br><br>
+            </div>
+            <h1 class="bake"><em>&#127874; Bakeries &#127874;</em></h1>
+            <div class="dishes">
+                <div>
+                    <img style="margin-top: 20px;" width="300px" src="cake1.jpg" alt="">
+                    <P>CHOCOLATE CAKES</P>
+                    <P>Price: $50.50</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;" width="300px" src="cake2.jpg" alt="">
+                    <P>BIRTHDAY CAKES</P>
+                    <P>Price: $40.00</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;" width="300px" src="cake3.jpg" alt="">
+                    <P>QUALITY RED VELVET CAKES</P>
+                    <P>Price: $57.25</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;" width="300px" src="agege1.jpg" alt="">
+                    <P>FLUFFY AGEGE BREAD</P>
+                    <P>Price: $12.12</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;" width="300px" src="pancake.jpg" alt="">
+                    <P>PANCAKES</P>
+                    <P>Price: $15.00</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;"  width="350px" src="pizza1.jpg" alt="">
+                    <P>CHIKEN PIZZA</P>
+                    <P>Price: $25.15</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;"  width="250px" src="slicebread2.jpg" alt="">
+                    <P>SLICED BREAD</P>
+                    <P>Price: $15.30</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;"  width="350px" src="meatpie.jpg" alt="">
+                    <P>MEATPIES</P>
+                    <P>Price: $10.00</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;"  width="350px" src="smallchops.jpg" alt="">
+                    <P>SMALL-CHOPS</P>
+                    <P>Price: $10.10</P>
+                    <td>
+                        <span>Place order :</span>
+                        <select style="width: 100px; background-color: black; color:white; padding: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td><br><br>
+                    <button class="add" onclick="alert('Added');">Add to cart</button>
+                    <button class="buy" onclick="alert('Loading...')">Buy</button>
+                </div>
+                <script>
+                 
+                </script>
+            </div>    
+        </div>
+    </body>
+</html>
